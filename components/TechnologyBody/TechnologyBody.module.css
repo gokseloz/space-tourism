@@ -1,0 +1,77 @@
+.contentWrapper {
+  color: white;
+  display: flex;
+  gap: 5vw;
+  padding-block: 3rem;
+  width: 88.5%;
+  margin-left: auto;
+}
+
+.firstSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.bodyWrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 5rem;
+  gap: 5rem;
+}
+
+.technologyBtnWrapper {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.technologyBtn {
+  padding: 0;
+  width: 5rem;
+  aspect-ratio: 1 / 1;
+  font-size: 1.5rem;
+  border: 1px solid rgba(209, 215, 250, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+}
+
+.activeBtn {
+  background-color: white;
+  color: black;
+}
+
+.mainTitle {
+  font-family: var(--ff-secondary);
+  font-size: 3rem;
+}
+
+.subTitle {
+  font-family: var(--ff-primary);
+  color: var(--color-secondary);
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+}
+
+.bodyText {
+  font-family: var(--ff-tertiary);
+  color: var(--color-secondary);
+  font-size: 1.2rem;
+}
+
+.secondSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.technologyImageWrapper {
+    margin-top: 4rem;
+}
+
+.technologyImage {
+  object-fit: cover;
+}

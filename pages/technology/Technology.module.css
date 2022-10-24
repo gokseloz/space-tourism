@@ -1,0 +1,7 @@
+.technologyContainer {
+  min-height: 100vh;
+  width: 100%;
+  background: url("../../public/technology/background-technology-desktop.jpg")
+    no-repeat center;
+  background-size: cover;
+}

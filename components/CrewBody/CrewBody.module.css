@@ -1,0 +1,70 @@
+.contentWrapper {
+  color: white;
+  display: flex;
+  gap: 1rem;
+  padding-block: 3rem;
+  width: 77%;
+  margin-inline: auto;
+}
+
+.firstSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainTitle {
+  font-family: var(--ff-secondary);
+  font-size: 3rem;
+}
+
+.bodyText {
+  font-family: var(--ff-primary);
+  color: var(--color-secondary);
+  font-size: 1.4rem;
+  max-lines: 4;
+}
+
+.secondSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.subTitle {
+  font-family: var(--ff-primary);
+  color: var(--color-secondary);
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-top: 5rem;
+  opacity: 0.5;
+}
+
+.crewBtnWrapper {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.crewBtn {
+  width: 1rem;
+  aspect-ratio: 1 / 1;
+  background-color: white;
+  opacity: 0.5;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.activeBtn {
+  opacity: 1;
+}
+
+.crewImageWrapper {
+  min-width: 500px;
+}
+
+.crewImage {
+  object-fit: contain;
+  shape-outside: circle(50%);
+}

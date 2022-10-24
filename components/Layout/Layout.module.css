@@ -1,0 +1,11 @@
+.layout {
+  min-height: 100vh;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.main {
+  display: flex;
+  /* width: 77%;
+  margin-inline: auto; */
+}

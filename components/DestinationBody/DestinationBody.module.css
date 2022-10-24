@@ -1,0 +1,66 @@
+.contentWrapper {
+  color: white;
+  display: flex;
+  gap: 15rem;
+  padding-block: 3rem;
+  width: 77%;
+  margin-inline: auto;
+}
+
+.firstSection {
+  flex: 1;
+}
+
+.mainTitle {
+  font-family: var(--ff-secondary);
+  font-size: 5rem;
+}
+
+.destinationImage {
+  width: clamp(250px, 100%, 400px);
+  aspect-ratio: 1 / 1;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  position: relative;
+  animation: spin 144s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.secondSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 6rem;
+}
+
+.destinationBtnWrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.destinationBtn {
+  color: inherit;
+  font-family: var(--ff-primary);
+  letter-spacing: 0.2em;
+  padding: 0;
+  padding-bottom: 0.8em;
+}
+
+.activeBtn {
+  border-bottom: 2px solid currentColor;
+}
+
+.description {
+  font-family: var(--ff-primary);
+  color: var(--color-secondary);
+  font-size: 1rem;
+  padding-right: 4rem;
+  line-height: 1.7;
+}

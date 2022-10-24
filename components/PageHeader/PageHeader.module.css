@@ -1,0 +1,11 @@
+.subTitle {
+  font-family: var(--ff-primary);
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+}
+
+.pageIndex {
+  color: var(--color-secondary);
+  opacity: .5;
+}
