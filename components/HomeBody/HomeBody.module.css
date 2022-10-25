@@ -3,7 +3,7 @@
   display: flex;
   gap: 10rem;
   padding-block: 6rem;
-  width: 50%;
+  width: 77%;
   margin-inline: auto;
 }
 
@@ -20,13 +20,13 @@
 
 .mainTitle {
   font-family: var(--ff-secondary);
-  font-size: 10rem;
+  font-size: 9rem;
 }
 
 .subTitle {
   font-family: var(--ff-primary);
   color: var(--color-secondary);
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 500;
   letter-spacing: 0.15em;
 }
@@ -34,7 +34,9 @@
 .bodyText {
   font-family: var(--ff-primary);
   color: var(--color-secondary);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.75;
+  width: 90%;
 }
 
 .exploreBtn {
@@ -69,5 +71,11 @@
 
   .bodyText {
     text-align: center;
+    font-size: 1rem;
+    width: 58%;
+  }
+
+  .subTitle {
+    font-size: 1.3rem;
   }
 }

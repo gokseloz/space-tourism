@@ -1,46 +1,28 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import styles from "./Navbar.module.css";
+import { pages } from "../../constants/pages";
+import { SideNavContext } from "../../context/SidebarContext";
 
 const Navbar = () => {
   const router = useRouter();
-
-  const navOptions = [
-    {
-      route: "/",
-      name: "home",
-    },
-    {
-      route: "/destination",
-      name: "destination",
-    },
-    {
-      route: "/crew",
-      name: "crew",
-    },
-    {
-      route: "/technology",
-      name: "technology",
-    },
-  ];
+  const isSidebarOpen = useContext(SideNavContext);
 
   return (
     <nav className={styles.navbar}>
       <ul className={styles.navList}>
-        {navOptions.map((option, index) => {
+        {pages.map((page) => {
           return (
             <li
-              key={index}
+              key={page.index}
               className={`${styles.navListItem} ${
-                router.pathname === option.route
-                  ? styles.active
-                  : styles.passive
+                router.pathname === page.path ? styles.active : styles.passive
               }`}
             >
-              <Link href={option.route}>
+              <Link href={page.path}>
                 <a className={styles.listItemIndex}>
-                  0{index} {option.name}
+                  <b>{page.index}</b> {page.name}
                 </a>
               </Link>
             </li>

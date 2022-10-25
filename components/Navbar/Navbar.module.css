@@ -1,6 +1,6 @@
 .navbar {
   padding: 0em 4em;
-  height: 90px;
+  height: 100px;
   backdrop-filter: blur(50px);
   position: relative;
   backdrop-filter: blur(0.2rem);
@@ -39,4 +39,26 @@
 .listItemIndex {
   font-weight: bold;
   width: max-content;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    backdrop-filter: blur(40px);
+    background: rgba(57, 75, 100, 0.2);
+    padding: 0em 3em;
+  }
+  .listItemIndex > b {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    backdrop-filter: blur(40px);
+    background: rgba(57, 75, 100, 0.2);
+    padding: 0em 3em;
+  }
+  .listItemIndex > b {
+    display: block;
+  }
 }

@@ -3,9 +3,17 @@
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 0.15em;
+  color: white;
+  padding-left: 10rem;
 }
 
 .pageIndex {
   color: var(--color-secondary);
-  opacity: .5;
+  opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+  .subTitle {
+    padding-left: 4rem;
+  }
 }

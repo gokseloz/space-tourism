@@ -14,3 +14,13 @@
   margin-right: -5rem;
   z-index: 5;
 }
+
+@media (max-width: 1024px) {
+  .line {
+    display: none;
+  }
+  .header {
+    padding: 0em 0em 2em 4em;
+    justify-content: space-between;
+  }
+}

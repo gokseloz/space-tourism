@@ -45,13 +45,13 @@
 
 .mainTitle {
   font-family: var(--ff-secondary);
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .subTitle {
   font-family: var(--ff-primary);
   color: var(--color-secondary);
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.15em;
 }
@@ -60,6 +60,8 @@
   font-family: var(--ff-tertiary);
   color: var(--color-secondary);
   font-size: 1.2rem;
+  line-height: 1.75;
+  width: 80%;
 }
 
 .secondSection {
@@ -69,9 +71,40 @@
 }
 
 .technologyImageWrapper {
-    margin-top: 4rem;
+  margin-top: 4rem;
+  width: 350px;
 }
 
-.technologyImage {
-  object-fit: cover;
+@media (max-width: 1024px) {
+  .contentWrapper {
+    flex-direction: column-reverse;
+    gap: 5vw;
+    padding-block: 0 3rem;
+    width: 100%;
+  }
+  .technologyImageWrapper {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .bodyWrapper {
+    margin-top: unset;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .technologyBtnWrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .bodyTextWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bodyText {
+    text-align: center;
+    width: 60%;
+  }
 }
