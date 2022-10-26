@@ -84,3 +84,46 @@
     height: 150px;
   }
 }
+
+@media (max-width: 1024px) {
+  .contentWrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
+  .firstSection {
+    order: 2;
+    gap: 0.5rem;
+  }
+
+  .secondSection {
+    order: 1;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid rgba(208, 214, 249, 0.3);
+  }
+
+  .crewImageWrapper {
+    min-width: 100%;
+  }
+
+  .subTitle {
+    order: 2;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .mainTitle {
+    order: 3;
+    font-size: 1.5rem;
+  }
+  .bodyText {
+    order: 4;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .crewBtnWrapper {
+    margin-top: 2rem;
+    order: 1;
+  }
+}

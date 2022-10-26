@@ -1,0 +1,50 @@
+.navList {
+  list-style-type: none;
+  gap: 3em;
+  color: white;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  backdrop-filter: blur(40px);
+  background: rgba(255, 255, 255, 0.1);
+  width: 300px;
+  padding-left: 2rem;
+  padding-top: 5rem;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 6;
+}
+
+.navListItem {
+  text-transform: uppercase;
+  font-family: var(--ff-primary);
+  letter-spacing: 0.7ch;
+  display: flex;
+  gap: 0.8em;
+  position: relative;
+  align-items: center;
+}
+.sideNavlistItemIndex {
+  font-weight: bold;
+  width: max-content;
+  display: flex;
+  gap: 1rem;
+}
+.sideNavlistItemIndex > b {
+  display: block;
+}
+
+.hamburgerMenuIcon {
+  display: block;
+  cursor: pointer;
+  z-index: 5;
+}
+
+@media (min-width: 768px) {
+  .navList {
+    display: none;
+  }
+}

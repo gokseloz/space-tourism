@@ -1,7 +1,6 @@
 .navbar {
   padding: 0em 4em;
   height: 100px;
-  backdrop-filter: blur(50px);
   position: relative;
   backdrop-filter: blur(0.2rem);
   background: rgba(57, 75, 100, 0.5);
@@ -41,6 +40,10 @@
   width: max-content;
 }
 
+.hamburgerMenuIcon {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .navbar {
     backdrop-filter: blur(40px);
@@ -54,11 +57,17 @@
 
 @media (max-width: 768px) {
   .navbar {
-    backdrop-filter: blur(40px);
-    background: rgba(57, 75, 100, 0.2);
-    padding: 0em 3em;
+    backdrop-filter: unset;
+    background: none;
+    padding-right: 2em;
   }
-  .listItemIndex > b {
+  .hamburgerMenuIcon {
     display: block;
+    cursor: pointer;
+    z-index: 7;
+  }
+
+  .navList{
+    display: none;
   }
 }

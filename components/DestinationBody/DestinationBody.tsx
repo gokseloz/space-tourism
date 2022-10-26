@@ -8,7 +8,12 @@ import Head from "next/head";
 const DestinationBody = () => {
   const [activeDestinationIndex, setActiveDestinationIndex] =
     useState<number>(0);
+  const [rotate, setRotate] = useState<number>(0);
   const destinationData = data.destinations[activeDestinationIndex];
+
+  const handleImageMove = (e: { clientX: number; clientY: number }) => {
+    setRotate(e.clientX / 2 + e.clientY / 2);
+  };
 
   return (
     <>
@@ -23,7 +28,11 @@ const DestinationBody = () => {
       <div className={styles.contentWrapper}>
         <div className={styles.bodyWrapper}>
           <section className={styles.firstSection}>
-            <div className={styles.destinationImageWrapper}>
+            <div
+              className={styles.destinationImageWrapper}
+              onMouseMove={handleImageMove}
+              style={{ rotate: `${rotate}deg` }}
+            >
               <Image
                 src={destinationData.images.png}
                 alt={destinationData.name}

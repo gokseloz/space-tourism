@@ -1,8 +1,7 @@
 import Header from "../Header/Header";
 import styles from "./Layout.module.css";
-import { useEffect, useState } from "react";
 
-const Layout = ({ children, bg }) => {
+const Layout = ({ children }) => {
   return (
     <div className={styles.layout}>
       <Header />

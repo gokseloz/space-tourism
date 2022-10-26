@@ -8,7 +8,10 @@ const HomeBody = () => {
     <>
       <Head>
         <title>Home</title>
-        <meta name="description" content="Space tourism gives you the experience of excellent journey to space"/>
+        <meta
+          name="description"
+          content="Space tourism gives you the experience of excellent journey to space"
+        />
       </Head>
       <div className={styles.contentWrapper}>
         <section className={styles.firstSection}>

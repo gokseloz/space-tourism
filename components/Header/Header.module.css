@@ -15,12 +15,23 @@
   z-index: 5;
 }
 
+.logo {
+  cursor: pointer;
+}
+
 @media (max-width: 1024px) {
   .line {
     display: none;
   }
   .header {
-    padding: 0em 0em 2em 4em;
+    padding: 0 0 0 4em;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 0 0 2em;
     justify-content: space-between;
   }
 }

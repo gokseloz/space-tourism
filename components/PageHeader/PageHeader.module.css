@@ -14,6 +14,16 @@
 
 @media (max-width: 1024px) {
   .subTitle {
+    margin-top: 3rem;
     padding-left: 4rem;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .subTitle {
+    padding-left: unset;
+    text-align: center;
+    margin-top: 1rem;
+
   }
 }

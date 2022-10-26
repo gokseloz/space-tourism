@@ -6,7 +6,7 @@ const SidebarProvider = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
 
   return (
-    <SideNavContext.Provider value={isSidebarOpen}>
+    <SideNavContext.Provider value={{ isSidebarOpen, setIsSidebarOpen }}>
       {children}
     </SideNavContext.Provider>
   );

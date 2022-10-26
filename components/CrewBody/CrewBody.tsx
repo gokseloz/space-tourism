@@ -8,6 +8,7 @@ import Head from "next/head";
 const CrewBody = () => {
   const [activeCrewIndex, setActiveCrewIndex] = useState<number>(0);
   const crewData = data.crew[activeCrewIndex];
+
   return (
     <>
       <Head>

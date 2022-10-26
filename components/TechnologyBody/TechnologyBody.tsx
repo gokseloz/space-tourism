@@ -4,15 +4,10 @@ import styles from "./TechnologyBody.module.css";
 import Image from "next/image";
 import PageHeader from "../PageHeader/PageHeader";
 import Head from "next/head";
-import { useMediaQuery } from "react-responsive";
 
 const TechnologyBody = () => {
   const [activeTechnologyIndex, setActiveTechnologyIndex] = useState<number>(0);
   const technologyData = data.technology[activeTechnologyIndex];
-
-  const isTablet = useMediaQuery({
-    query: "(max-width: 1024px)",
-  });
 
   return (
     <>
@@ -53,24 +48,22 @@ const TechnologyBody = () => {
 
         <section className={styles.secondSection}>
           <div className={styles.technologyImageWrapper}>
-            {isTablet ? (
-              <Image
-                src={technologyData.images.landscape}
-                alt={technologyData.name}
-                width={1024}
-                height={414}
-                className={styles.technologyImageLandscape}
-                objectFit="cover"
-              />
-            ) : (
-              <Image
-                src={technologyData.images.portrait}
-                alt={technologyData.name}
-                width={518}
-                height={527}
-                className={styles.technologyImagePortrait}
-              />
-            )}
+            <Image
+              src={technologyData.images.landscape}
+              alt={technologyData.name}
+              width={1024}
+              height={414}
+              className={styles.technologyImageLandscape}
+              objectFit="cover"
+            />
+
+            <Image
+              src={technologyData.images.portrait}
+              alt={technologyData.name}
+              width={518}
+              height={527}
+              className={styles.technologyImagePortrait}
+            />
           </div>
         </section>
       </div>
